@@ -1,0 +1,31 @@
+{
+    "name": "travel-agency-erp",
+    "version": "1.0.0",
+    "description": "Complete ERP system for travel agencies with multi-currency support and financial management",
+    "private": true,
+    "scripts": {
+        "install:all": "npm run install:backend && npm run install:frontend",
+        "install:backend": "cd backend && npm install",
+        "install:frontend": "cd frontend && npm install",
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "seed": "cd backend && node seedData.js",
+        "build:frontend": "cd frontend && npm run build",
+        "start:backend": "cd backend && npm start"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "keywords": [
+        "erp",
+        "travel-agency",
+        "accounting",
+        "multi-currency",
+        "mongodb",
+        "react",
+        "typescript"
+    ],
+    "author": "Your Company",
+    "license": "PRIVATE"
+}

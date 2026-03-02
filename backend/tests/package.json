@@ -1,0 +1,19 @@
+{
+    "name": "travel-erp-tests",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Test scripts for Travel ERP API",
+    "scripts": {
+        "test:vendor": "node testVendor.js",
+        "test:customer": "node testCustomer.js",
+        "test:purchase": "node testPurchase.js",
+        "test:sale": "node testSale.js",
+        "test:expense": "node testExpense.js",
+        "test:customer-payment": "node testCustomerPayment.js",
+        "test:vendor-payment": "node testVendorPayment.js",
+        "test:all": "node testVendor.js && node testCustomer.js && node testPurchase.js && node testSale.js && node testExpense.js && node testCustomerPayment.js && node testVendorPayment.js"
+    },
+    "dependencies": {
+        "axios": "^1.13.6"
+    }
+}
