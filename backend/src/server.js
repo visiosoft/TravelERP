@@ -57,6 +57,28 @@ app.get('/health', (req, res) => {
     });
 });
 
+// API root endpoint
+app.get('/api', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: 'Travel Agency ERP API',
+        version: '1.0.0',
+        endpoints: {
+            auth: '/api/auth',
+            customers: '/api/customers',
+            vendors: '/api/vendors',
+            services: '/api/services',
+            exchangeRates: '/api/exchange-rates',
+            purchases: '/api/purchases',
+            sales: '/api/sales',
+            payments: '/api/payments',
+            expenses: '/api/expenses',
+            reports: '/api/reports',
+        },
+        timestamp: new Date().toISOString(),
+    });
+});
+
 // API Routes
 import authRoutes from './routes/authRoutes.js';
 import customerRoutes from './routes/customerRoutes.js';
