@@ -7,7 +7,7 @@ import ConfirmDialog from '@/components/ui/ConfirmDialog';
 
 export default function Vendors() {
     const queryClient = useQueryClient();
-    const [page, setPage] = useState(1);
+    const [page] = useState(1);
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [selectedVendor, setSelectedVendor] = useState<any>(null);
     const [deleteDialog, setDeleteDialog] = useState<{ isOpen: boolean; vendor: any }>({ isOpen: false, vendor: null });

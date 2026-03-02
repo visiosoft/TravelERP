@@ -8,7 +8,7 @@ import ConfirmDialog from '@/components/ui/ConfirmDialog';
 
 export default function Sales() {
     const queryClient = useQueryClient();
-    const [page, setPage] = useState(1);
+    const [page] = useState(1);
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [selectedSale, setSelectedSale] = useState<any>(null);
     const [deleteDialog, setDeleteDialog] = useState<{ isOpen: boolean; sale: any }>({ isOpen: false, sale: null });

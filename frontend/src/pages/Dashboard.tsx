@@ -2,7 +2,6 @@ import { useQuery } from '@tanstack/react-query';
 import api from '@/lib/api';
 import {
     TrendingUp,
-    TrendingDown,
     Users,
     Building2,
     DollarSign,

@@ -8,7 +8,7 @@ import ConfirmDialog from '@/components/ui/ConfirmDialog';
 
 export default function Expenses() {
     const queryClient = useQueryClient();
-    const [page, setPage] = useState(1);
+    const [page] = useState(1);
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [selectedExpense, setSelectedExpense] = useState<any>(null);
     const [deleteDialog, setDeleteDialog] = useState<{ isOpen: boolean; expense: any }>({ isOpen: false, expense: null });
